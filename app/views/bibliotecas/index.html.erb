@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-md-10 offset-md-2">
-<h1>Lista de libros</h1>
+    <h1>Lista de libros</h1>
 
-<table>
+  <table>
     <tr>
      <thead>
        <th>Title</th>
@@ -12,9 +12,9 @@
     </tr>
       <% @bibliotecas.each do |biblioteca| %> 
         <div class="form-group">
-          <td><%= biblioteca.title%></td>
-          <td><%= biblioteca.author%></td>
-          <td><%= biblioteca.status%></td>
+          <td><%= biblioteca.title %></td>
+          <td><%= biblioteca.author %></td>
+          <td><%= biblioteca.status %></td>
         </div>
         
 
@@ -27,8 +27,8 @@
     </tr>
       <% end%>
       
-</table>
+  </table>
         <%= link_to "Ingresar libro", bibliotecas_new_path %>
+        <%= paginate @bibliotecas %>
   </div>
 </div>
-<%= paginate @bibliotecas %>

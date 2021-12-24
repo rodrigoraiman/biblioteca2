@@ -23,17 +23,7 @@
 
   <div class="field">
     <%= form.label :status %>
-    <%= form.select :status, Biblioteca.statuses.keys %>
-  </div>
-
-  <div class="field">
-    <%= form.label :date_borrowed %>
-    <%= form.date_field :date_borrowed %>
-  </div>
-
-  <div class="field">
-    <%= form.label :date_returned %>
-    <%= form.date_field :date_returned %>
+    <%= form.select :status, Biblioteca.status.keys %>
   </div>
 
   <div class="actions">
