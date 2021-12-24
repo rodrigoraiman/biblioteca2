@@ -23,7 +23,12 @@
 
   <div class="field">
     <%= form.label :status %>
-    <%= form.select :status, Biblioteca.status.keys %>
+    <%= form.select :status, Biblioteca.statuses.keys %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_select :date %>
   </div>
 
   <div class="actions">
